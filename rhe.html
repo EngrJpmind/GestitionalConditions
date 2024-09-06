@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d08c4b2277.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pic/icon/kisspng-birthful-adriana-lozada-face-swap-logo-childbirt-5b80403a815ac7.3969343115351317065299.png">
+    <title>Gestational Conditions</title>
+</head>
+<body class="bgt">
+    <div class="top">
+        <header>
+            <h3>Gestational Conditions</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rhe.html">EHR</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="image-container">
+        <img class="slide" src="pic/ehr/1.png">
+        <img class="slide" src="pic/ehr/DD.png">
+        <img class="slide" src="pic/ehr/PFSH.png">
+        <img class="slide" src="pic/ehr/EXAM.png">
+        <img class="slide" src="pic/ehr/ORDERS.png">
+        <img class="slide" src="pic/ehr/ASSESSMENT.png">
+        <img class="slide" src="pic/ehr/PRESCRIPTION.png">
+        <img class="slide" src="pic/ehr/IMAGING.png">
+        <button class="slide-button left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slide-button right" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+
+    <div class="foot">
+        <footer>
+            <div>
+                <img src="pic/University-of-Cebu-Logo-removebg-preview.png" width="200">
+            </div>
+            <hr>
+            <div style="margin-top: 20px; font-weight: normal;">
+                <h1 style="font-weight: normal; font-family: 'PT Sans', sans-serif;">Bleeding during pregnancy</h1>
+                <p style="font-weight: normal;">Unversity of Cebu-banilad College of Nursing</p>    
+            </div>
+        </footer>  
+    </div>
+    <script>
+        var slides = document.getElementsByClassName("slide");
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[slideIndex-1].classList.add("active");
+}
+
+    </script>
+</body>
+</html>
